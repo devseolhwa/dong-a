@@ -1,7 +1,23 @@
 #main{overflow: hidden;}
 
+#fp-nav{right: 57px !important;}
+#fp-nav ul{position: relative;}
+#fp-nav ul:after{content: "";position: absolute;top: -22px;left: 3px;width: 1px;height: 180px;background: rgba(221, 221, 221, 0.2);}
+#fp-nav ul li{position: relative;display: flex;align-items: center;flex-direction: row;flex-wrap: nowrap;width: auto;height: 13px;margin: 0;}
+#fp-nav ul li:last-child{display: none;}
+#fp-nav ul li + li{margin-top: 50px;}
+#fp-nav ul li a{width: 7px;height: 7px;}
+#fp-nav ul li a span{left: 0;top: 0;height: 7px;width: 7px;background: #C2C2C3;margin: 0;}
+#fp-nav ul li a.active span, #fp-nav ul li:hover a.active span{width: 7px;height: 7px;margin: 0;background: #F9001C;}
+#fp-nav ul li a.active span:after{content: "";position: absolute;top: -6px;left: -6px;width: 19px;height: 19px;border: 1px solid #F9001C;border-radius: 100%;box-sizing: border-box;}
+#fp-nav ul li:hover a span{width: 7px;height: 7px;margin: 0;}
+#fp-nav ul li .fp-tooltip{position: relative;top: auto; left: auto !important;width: auto;margin-left: 12px;opacity: 1;font-size: 15px;color: #C2C2C3;font-weight: 700;}
+#fp-nav ul li a.active + .fp-tooltip{color: #F9001C;}
+/* #fp-nav.ver2 ul:after{background: #DFDFDF;}
+#fp-nav.ver2 ul li .fp-tooltip{color: #ccc;}
+
 #fp-nav.black ul li .fp-tooltip{color: #000;}
-#fp-nav.black ul li a span, .fp-slidesNav.black ul li a span{background: #000;}
+#fp-nav.black ul li a span, .fp-slidesNav.black ul li a span{background: #000;} */
 /* #fp-nav ul li:last-child, .fp-slidesNav ul li:last-child{display: none;} */
 
 .section{overflow: hidden;}
@@ -12,8 +28,9 @@
 .visualSwiper .visualBg{position: relative;width: 100%;min-height: 800px;height: 100vh;}
 .visualSwiper .visualBg img{position: absolute;left: 0;top: 0;width: 100%;height: 100%;object-fit: cover;transform: scale(1.2);}
 .visualSwiper .visualText{position: absolute;top: 50%;left: 50%;display: flex;flex-wrap: wrap;flex-direction: column;justify-content: center;align-items: center;width: 100%;height: 100%;padding-bottom: 50px;box-sizing: border-box;text-align: center;z-index: 1;transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);-moz-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);-o-transform: translate(-50%, -50%);}
-.visualSwiper .visualText p{transform: translateY(1rem);-webkit-transform: translateY(1rem);-moz-transform: translateY(1rem);-ms-transform: translateY(1rem);-o-transform: translateY(1rem);opacity: 0;transition: 1.1s;-webkit-transition: 1.1s;-moz-transition: 1.1s;-ms-transition: 1.1s;-o-transition: 1.1s;transition-delay: 0.8s;color: #FFF;font-size: 60px;font-weight: 700;line-height: 140%;letter-spacing: 0.2px;text-align: center;word-break: keep-all;}
-.visualSwiper .visualText p.delay{transition-delay: 1.2s;}
+.visualSwiper .visualText p{transform: translateY(1rem);-webkit-transform: translateY(1rem);-moz-transform: translateY(1rem);-ms-transform: translateY(1rem);-o-transform: translateY(1rem);opacity: 0;transition: 1.1s;-webkit-transition: 1.1s;-moz-transition: 1.1s;-ms-transition: 1.1s;-o-transition: 1.1s;transition-delay: 0.8s;color: #FFF;font-size: 50px;font-weight: 900;line-height: 130%;text-align: center;word-break: keep-all;}
+.visualSwiper .visualText p.delay1{transition-delay: 1.0s;}
+.visualSwiper .visualText p.delay2{transition-delay: 1.4s;}
 .visualControl{position: absolute;top: 50%;left: 50%;width: 100%;max-width: 170px;height: 100%;transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);-moz-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);-o-transform: translate(-50%, -50%);padding-top: 250px;display: flex;flex-direction: row;flex-wrap: nowrap;align-items: center;justify-content: center;gap: 10px;z-index: 99;}
 .visualControl button{position: initial;top: initial;right: initial;left: initial;margin-top: initial;}
 .visualControl .swiper-button-prev, .visualControl .swiper-button-next{width: 18px;height: 18px;background-image: url(../images/main/icon_left_white.svg);background-position: center;background-repeat: no-repeat;overflow: hidden;text-indent: -9999px;white-space: nowrap;}

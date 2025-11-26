@@ -70,18 +70,20 @@ $(function(){
         // fullpage 해제할 브라우저 너비와 높이
         responsiveWidth : 1199,
         responsiveHeight : 800,
-        anchors : ["DASAN DTS", "PRODUCT", "CEO", "ABOUT US"],
-        sectionsColor : ["#000", "#FFF", "#2448E3", "#FFF"],
+        anchors : ["DONG-A", "SERVICE", "NEWS"],
+        sectionsColor : ["#000", "#FFF", "#FFF"],
         css3: true,
         easing: "easeInOutCubic",
         easingcss3: "ease",
-        scrollingSpeed: 1000,
+        scrollingSpeed: 800,
         //normalScrollElements: "#section2",
         scrollOverflow: true,
         navigation : true,
-        navigationPosition : "left",
-        navigationTooltips : ["DASAN DTS", "PRODUCT", "CEO", "ABOUT US"],
+        navigationPosition : "right",
+        navigationTooltips : ["DONG-A", "SERVICE", "NEWS"],
         showActiveTooltip: true,
+		slidesNavigation: false,
+        slidesNavPosition: 'bottom',
         //loopBottom : true,
         afterLoad : function (anchorLink, index) {
             if($(".section").hasClass("on")){
@@ -108,6 +110,6 @@ $(function(){
     });
 
     $("#btnTop").click(function() {
-        $.fn.fullpage.moveTo("DASAN DTS");
+        $.fn.fullpage.moveTo("dong-a");
     });
 });
