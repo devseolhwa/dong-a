@@ -43,26 +43,30 @@
 .visualSwiper .swiper-slide:not(.swiper-slide-active) img{opacity: 0;}
 .visualSwiper .swiper-slide-active .visualText p{opacity: 1;transform: none;-webkit-transform: none;-moz-transform: none;-ms-transform: none;-o-transform: none;}
 
-/* 20250723 START */
 #section2{position: relative;}
-.productGroup{display: flex;justify-content: center;align-items: center;flex-direction: column;width: 100%;height: 100vh;padding: 120px 50px 20px;box-sizing: border-box;}
-.productGroup .inner{width: 1500px;max-width: 100%;height: 100%;}
-.productGroup .titleGroup{margin-bottom: 30px;}
-.productGroup .titleGroup strong{display: block;color: #000;font-size: 50px;font-weight: 700;line-height: normal;letter-spacing: -0.4px;}
-.productGroup .titleGroup p{margin-top: 10px;color: #222;font-size: 26px;font-weight: 400;line-height: normal;word-break: keep-all;}
-.productGroup ul{display: flex;flex-direction: row;flex-wrap: wrap;width: 100%;height: calc(100% - 133px);}
-.productGroup ul li{width: 25%;padding: 40px 30px 30px 30px;box-sizing: border-box;background-position: center;background-size: cover;background-repeat: no-repeat;}
-.productGroup ul li:nth-child(1){background-image: url(../images/main/bg_afc.jpg);border-radius: 40px 0 0 0;}
-.productGroup ul li:nth-child(2){background-image: url(../images/main/bg_acc.jpg);}
-.productGroup ul li:nth-child(3){background-image: url(../images/main/bg_Radiator.jpg);}
-.productGroup ul li:nth-child(4){background-image: url(../images/main/bg_orc.jpg);border-radius: 0 0 40px 0;}
-.productGroup ul li p.lg{color: #000;font-size: 32px;font-weight: 700;line-height: normal;}
-.productGroup ul li p.md{margin-top: 10px;color: #000;font-size: 20px;font-weight: 400;line-height: 150%;word-break: keep-all;}
-.productGroup ul li p.sm{margin-top: 10px;color: #000;font-size: 14px;font-weight: 400;line-height: 150%;letter-spacing: -0.4px;word-break: keep-all;}
-.productGroup ul li .btnViewmore{position: relative;display: inline-block;margin-top: 15px;padding: 0 15px;box-sizing: border-box;color: #000;font-size: 16px;font-weight: 400;line-height: normal;z-index: 1;}
-.productGroup ul li .btnViewmore i{position: absolute;left: 0;top: 50%;width: 30px;height: 30px;margin-top: -15px;background: rgba(37, 72, 227, 0.50);border-radius: 30px;z-index: -1;}
-.productGroup ul li .btnViewmore:hover i{background: #2548E3;}
-/* 20250723 END */
+.servicesGroup{display: flex;justify-content: center;align-items: center;flex-direction: column;width: 100%;height: 100vh;padding: 100px 0 0;box-sizing: border-box;}
+.servicesGroup .titleGroup{display: flex;flex-direction: column;align-items: center;justify-content: center;height: 25%;min-height: 170px;box-sizing: border-box;}
+.servicesGroup .titleGroup strong{display: block;color: #000;font-size: 50px;font-weight: 800;line-height: 100%;letter-spacing: 1px;font-family: 'Paperozi';}
+.servicesGroup .titleGroup strong:before{content: "";position: absolute;left: -33px;top: 0;display: block;width: 50px;height: 50px;background: #F9001C;border-radius: 100%;z-index: -1;}
+.servicesGroup .titleGroup p{margin-top: 20px;color: #222;font-size: 24px;font-weight: 400;line-height: 140%;word-break: keep-all;}
+.servicesGroup ul{display: flex;flex-direction: row;flex-wrap: wrap;align-content: flex-start;width: 100%;height: calc(100% - 25%);max-height: calc(100% - 170px);}
+.servicesGroup ul li{width: 33.33%;height: 50%;overflow: hidden;}
+.servicesGroup ul li a{display: flex;align-items: flex-start;flex-direction: column;justify-content: flex-end;width: 100%;height: 100%;padding: 30px 30px 65px 50px;padding: 1.5625vw 1.5625vw 3.3854vw 2.6042vw;box-sizing: border-box;background-position: center;background-size: cover;background-repeat: no-repeat;-webkit-transition: .5s;transition: .5s;}
+.servicesGroup ul li a:after {content: "";position: absolute;top: 0;right: 0;bottom: 0;left: 0;background: inherit;background-size: cover;transform-origin: center;transition: transform .5s ease-in-out;z-index: 1;}
+.servicesGroup ul li:nth-child(1) a{background-image: url(../images/main/bg_services01.jpg);}
+.servicesGroup ul li:nth-child(2) a{background-image: url(../images/main/bg_services02.jpg);}
+.servicesGroup ul li:nth-child(3) a{background-image: url(../images/main/bg_services03.jpg);}
+.servicesGroup ul li:nth-child(4) a{background-image: url(../images/main/bg_services04.jpg);}
+.servicesGroup ul li:nth-child(5) a{background-image: url(../images/main/bg_services05.jpg);}
+.servicesGroup ul li:nth-child(6) a{background-image: url(../images/main/bg_services06.jpg);}
+.servicesGroup ul li .num{color:  #F9001C;font-size: 30px;font-size: 1.5625vw;font-weight: 800;line-height: 130%;z-index: 2;}
+.servicesGroup ul li .name{color: #FFF;font-size: 40px;font-size: 2.0833vw;font-weight: 800;line-height: 100%;word-break: keep-all;z-index: 2;}
+.servicesGroup ul li .btnMore{position: relative;display: flex;align-items: center;flex-direction: row;flex-wrap: wrap;justify-content: flex-start;gap: 10px;width: fit-content;margin-top: 25px;border-radius: 50px;color: #FFF;font-size: 16px;font-weight: 800;line-height: 140%;-webkit-transition: .5s;transition: .5s;z-index: 2;}
+.servicesGroup ul li .btnMore i{position: relative;display: block;width: 16px;height: 16px;}
+.servicesGroup ul li .btnMore i:before{content: "";display: block;position: absolute;top: 0;left: 50%;width: 2px;height: 100%;margin-left: -1px;background: #FFF;}
+.servicesGroup ul li .btnMore i:after{content: "";display: block;position: absolute;top: 50%;left: 0;width: 100%;height: 2px;margin-top: -1px;background: #FFF;}
+.servicesGroup ul li a:hover:after{transform: scale(1.1);}
+.servicesGroup ul li a:hover .btnMore{margin-top: 35px;padding: 10px 20px;background: #F9001C;}
 
 #section3{position: relative;}
 .ceoGroup{display: flex;flex-direction: row;flex-wrap: wrap;align-items: stretch;height: 100vh;}
@@ -104,6 +108,12 @@
 .aboutusGroup #footer .familyGroup ul{background-color: rgba(0, 0, 0, 0.9);}
 .aboutusGroup #footer .familyGroup ul li a{color: #FFF;}
 #section4.ani .aboutusGroup #footer{animation: rightAni 0.8s 1s both;}
+
+@media screen and (max-height: 800px){
+
+    .servicesGroup{height: 100%;min-height: 800px;}
+
+}
 
 @media screen and (max-width: 1399px){
 

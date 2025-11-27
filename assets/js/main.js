@@ -71,7 +71,7 @@ $(function(){
         responsiveWidth : 1199,
         responsiveHeight : 800,
         anchors : ["DONG-A", "SERVICE", "NEWS"],
-        sectionsColor : ["#000", "#FFF", "#FFF"],
+        sectionsColor : ["#FFF", "#FFF", "#FFF"],
         css3: true,
         easing: "easeInOutCubic",
         easingcss3: "ease",
