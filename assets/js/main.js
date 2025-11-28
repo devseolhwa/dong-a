@@ -80,7 +80,7 @@ $(function(){
         scrollOverflow: true,
         navigation : true,
         navigationPosition : "right",
-        navigationTooltips : ["DONG-A", "SERVICE", "NEWS"],
+        navigationTooltips : ["DONG-A", "SERVICES", "NEWS"],
         showActiveTooltip: true,
 		slidesNavigation: false,
         slidesNavPosition: 'bottom',

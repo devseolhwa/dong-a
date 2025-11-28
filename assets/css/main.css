@@ -47,7 +47,7 @@
 .servicesGroup{display: flex;justify-content: center;align-items: center;flex-direction: column;width: 100%;height: 100vh;padding: 100px 0 0;box-sizing: border-box;}
 .servicesGroup .titleGroup{display: flex;flex-direction: column;align-items: center;justify-content: center;height: 25%;min-height: 170px;box-sizing: border-box;}
 .servicesGroup .titleGroup strong{display: block;color: #000;font-size: 50px;font-weight: 800;line-height: 100%;letter-spacing: 1px;font-family: 'Paperozi';}
-.servicesGroup .titleGroup strong:before{content: "";position: absolute;left: -33px;top: 0;display: block;width: 50px;height: 50px;background: #F9001C;border-radius: 100%;z-index: -1;}
+.servicesGroup .titleGroup strong:before{content: "";position: absolute;left: -30px;top: 0;display: block;width: 50px;height: 50px;background: #F9001C;border-radius: 100%;z-index: -1;}
 .servicesGroup .titleGroup p{margin-top: 20px;color: #222;font-size: 24px;font-weight: 400;line-height: 140%;word-break: keep-all;}
 .servicesGroup ul{display: flex;flex-direction: row;flex-wrap: wrap;align-content: flex-start;width: 100%;height: calc(100% - 25%);max-height: calc(100% - 170px);}
 .servicesGroup ul li{width: 33.33%;height: 50%;overflow: hidden;}
@@ -68,46 +68,29 @@
 .servicesGroup ul li a:hover:after{transform: scale(1.1);}
 .servicesGroup ul li a:hover .btnMore{margin-top: 35px;padding: 10px 20px;background: #F9001C;}
 
-#section3{position: relative;}
-.ceoGroup{display: flex;flex-direction: row;flex-wrap: wrap;align-items: stretch;height: 100vh;}
-.ceoGroup .imageArea{width: 50%;height: 100%;border-radius: 0 100px 0 0;overflow: hidden;}
-.ceoGroup .imageArea img{width: 100%;height: 100%;display: block;object-fit: cover;}
-.ceoGroup .textArea{width: 50%;height: 100%;padding-top: 170px;padding-left: 70px;background-image: url(../images/main/bg_earth.png);background-position: center bottom;background-repeat: no-repeat;box-sizing: border-box;}
-.ceoGroup .textArea span{display: block;color: #FFF;font-size: 30px;font-weight: 400;line-height: 150%;}
-.ceoGroup .textArea strong{display: block;color: #FFF;font-size: 50px;font-weight: 700;line-height: 150%;}
-.ceoGroup .textArea p{margin-top: 30px;color: rgba(255, 255, 255, 0.90);font-size: 26px;font-weight: 400;line-height: 150%;}
-.ceoGroup .textArea .btnViewmore{position: relative;display: inline-block;margin-top: 43px;padding: 0 25px;box-sizing: border-box;color: #FFF;font-size: 20px;font-weight: 400;line-height: normal;z-index: 1;}
-.ceoGroup .textArea .btnViewmore i{position: absolute;left: 0;top: 50%;width: 50px;height: 50px;margin-top: -25px;background: rgba(255, 255, 255, 0.20);border-radius: 50px;z-index: -1;}
-.ceoGroup .textArea .btnViewmore:hover i{background: rgba(255, 255, 255, 0.60);}
-
-#section4{position: relative;background: #FFF;overflow: hidden;}
-.aboutusGroup{display: flex;flex-direction: row;flex-wrap: wrap;height: calc(100% - 300px);padding-top: 300px;}
-.aboutusGroup:before{content: "Contact Us";opacity: 0;position: absolute;left: 20px;top: 150px;color: #F7F7F7;font-size: 180px;font-weight: 700;line-height: 100%;z-index: 0;}
-.aboutusGroup .contact{opacity: 0;position: relative;display: flex;flex-direction: column;flex-wrap: wrap;justify-content: flex-end;width: 25%;height: 100%;padding: 0 0 100px 50px;background-image: url(../images/main/bg_contactUs.jpg);background-size: cover;background-position: center;background-repeat: no-repeat;box-sizing: border-box;z-index: 2;}
-.aboutusGroup .contact h3{color: #000;font-size: 50px;font-weight: 700;line-height: normal;}
-.aboutusGroup .customer{opacity: 0;position: relative;width: 75%;height: 100%;padding: 0 70px 100px;border-radius: 0px 100px 0px 0px;background: #F7F7F7;box-sizing: border-box;overflow: hidden;display: flex;flex-direction: column;justify-content: flex-end;align-items: stretch;}
-.aboutusGroup .customer h3{color: #000;font-size: 50px;font-weight: 700;line-height: normal;}
-.aboutusGroup .customer ul{display: flex;flex-direction: row;flex-wrap: wrap;justify-content: flex-start;align-items: flex-start;gap: 20px;max-width: 1060px;width: 100%;margin-top: 50px;}
-.aboutusGroup .customer ul li{width: calc(25% - 15px);}
-.aboutusGroup .customer ul li a{display: block;background: #fff;}
-.aboutusGroup .customer ul li a img{vertical-align: middle;}
-.aboutusGroup .btnViewmore{position: relative;display: block;width: 180px;margin-top: 50px;padding: 0 25px;box-sizing: border-box;color: #000;font-size: 20px;font-weight: 400;line-height: normal;z-index: 1;}
-.aboutusGroup .btnViewmore i{position: absolute;left: 0;top: 50%;width: 50px;height: 50px;margin-top: -25px;background: rgba(37, 72, 227, 0.50);border-radius: 50px;z-index: -1;}
-.aboutusGroup .btnViewmore:hover i{background: #2548E3;}
-#section4.ani .aboutusGroup:before{animation: rightAni 0.9s 1.5s both;}
-#section4.ani .aboutusGroup .contact{animation: rightAni 0.8s 0.5s both;}
-#section4.ani .aboutusGroup .customer{animation: rightAni 0.8s 1s both;}
-
-.aboutusGroup #footer{opacity: 0;position: relative;width: 75%;height: 100%;padding: 0 70px;border-radius: 0px 100px 0px 0px;background: #F7F7F7;box-sizing: border-box;overflow: hidden;display: flex;justify-content: space-between;align-items: flex-start;flex-direction: row;flex-wrap: wrap;align-content: center;gap: 30px;}
-.aboutusGroup #footer .footerLogo{margin-bottom: 20px;}
-.aboutusGroup #footer .footerAddress ul li strong{color: #333;}
-.aboutusGroup #footer .footerAddress ul li p{color: rgba(0, 0, 0, 0.80);}
-.aboutusGroup #footer .footerCopy{color: rgba(0, 0, 0, 0.70);}
-.aboutusGroup #footer .footerCopy span{color: #000;}
-.aboutusGroup #footer .familyGroup button{background-image: url(../images/layout/icon_down_black.svg);border: 1px solid rgba(0, 0, 0, 0.50);color: #333;}
-.aboutusGroup #footer .familyGroup ul{background-color: rgba(0, 0, 0, 0.9);}
-.aboutusGroup #footer .familyGroup ul li a{color: #FFF;}
-#section4.ani .aboutusGroup #footer{animation: rightAni 0.8s 1s both;}
+#section3{position: relative;background-image: url(../images/main/bg_section3.jpg);background-position: center;background-size: cover;background-repeat: no-repeat;height: 100vh;}
+.communityGroup{display: flex;justify-content: space-between;align-items: stretch;flex-direction: row;flex-wrap: wrap;align-content: center;gap: 40px;width: 100%;max-width: 1460px;height: 100%;margin: 0 auto;padding: 100px 50px 0;box-sizing: border-box;}
+.noticeGroup{width: 600px;}
+.noticeGroup .noticeArea{padding: 30px;background: #FFF;box-sizing: border-box;}
+.noticeGroup .recruitArea{padding: 30px;background: #FFF;box-sizing: border-box;}
+.noticeGroup .titleGroup{padding-bottom: 20px;border-bottom: 2px solid #000;box-sizing: border-box;}
+.noticeGroup .titleGroup p{color: #222;font-size: 34px;font-weight: 700;line-height: 150%;font-family: 'Paperozi';}
+.noticeGroup .recruitArea ul{display: flex;}
+.noticeGroup .recruitArea ul li{}
+.noticeGroup .recruitArea ul li a{}
+.surveyGroup{width: 600px;}
+.surveyGroup a{position: relative;background-image: url(../images/main/bg_survey.jpg);background-position: center;background-size: cover;background-repeat: no-repeat;height: 100%;}
+.surveyGroup a:after {content: "";position: absolute;top: 0;right: 0;bottom: 0;left: 0;background: inherit;background-size: cover;transform-origin: center;transition: transform .5s ease-in-out;z-index: 1;}
+.surveyGroup .name{color: #FFF;
+font-size: 34px;
+font-weight: 700;
+line-height: 150%;}
+.surveyGroup .btnMore{position: relative;display: flex;align-items: center;flex-direction: row;flex-wrap: wrap;justify-content: flex-start;gap: 10px;width: fit-content;margin-top: 25px;border-radius: 50px;color: #FFF;font-size: 16px;font-weight: 800;line-height: 140%;-webkit-transition: .5s;transition: .5s;z-index: 2;}
+.surveyGroup .btnMore i{position: relative;display: block;width: 16px;height: 16px;}
+.surveyGroup .btnMore i:before{content: "";display: block;position: absolute;top: 0;left: 50%;width: 2px;height: 100%;margin-left: -1px;background: #FFF;}
+.surveyGroup .btnMore i:after{content: "";display: block;position: absolute;top: 50%;left: 0;width: 100%;height: 2px;margin-top: -1px;background: #FFF;}
+.surveyGroup a:hover:after{transform: scale(1.1);}
+.surveyGroup a:hover .btnMore{margin-top: 35px;padding: 10px 20px;background: #F9001C;}
 
 @media screen and (max-height: 800px){
 
