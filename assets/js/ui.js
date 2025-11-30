@@ -100,9 +100,4 @@ $(function(){
         $(this).parent().toggleClass("active");
     });
 
-    // 패밀리사이트선택
-    $(".familyGroup button").on("click", function () {
-        $(this).parent().toggleClass("active");
-    });
-
 });

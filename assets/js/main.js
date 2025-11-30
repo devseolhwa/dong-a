@@ -1,32 +1,5 @@
 $(function(){
     
-    // 버튼 ani
-    $(".btnViewmore").each(function(){
-        var offset = 3;
-        if($(window).width() <= 1660){
-            offset = 5;
-        }
-
-        var $btn = $(this);
-        var btn_width = $btn.outerWidth() - offset;
-        var $bg =  $btn.find("i");
-        var tl = new TimelineMax({paused:true});
-        var dotted_width = $btn.find("i").width();
-        var dotted_left = (btn_width - dotted_width);
-        
-        tl.to($bg, .3, { width: btn_width+"px", left: "0",force3D: true});
-        tl.to($bg, .3, { width: dotted_width+"px", left: dotted_left+"px",force3D: true});
-
-        $btn.mouseenter(function(){
-            tl.play();
-
-        }).mouseleave(function(){
-            var currentTime = tl.time();
-            tl.reverse(currentTime);
-
-        });
-    });
-  
     // 메인비주얼 슬라이드
     let visualSwiper = new Swiper(".visualSwiper", {
         effect : "fade",
@@ -68,10 +41,10 @@ $(function(){
     $("#fullpage").fullpage({
         licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
         // fullpage 해제할 브라우저 너비와 높이
-        responsiveWidth : 1199,
+        responsiveWidth : 1399,
         responsiveHeight : 800,
-        anchors : ["DONG-A", "SERVICE", "NEWS"],
-        sectionsColor : ["#FFF", "#FFF", "#FFF"],
+        anchors : ["DONG-A", "SERVICE", "NEWS", "FOOTER"],
+        sectionsColor : ["#000", "#FFF", "#FFF"],
         css3: true,
         easing: "easeInOutCubic",
         easingcss3: "ease",
@@ -80,7 +53,7 @@ $(function(){
         scrollOverflow: true,
         navigation : true,
         navigationPosition : "right",
-        navigationTooltips : ["DONG-A", "SERVICES", "NEWS"],
+        navigationTooltips : ["DONG-A", "SERVICES", "NEWS", "FOOTER"],
         showActiveTooltip: true,
 		slidesNavigation: false,
         slidesNavPosition: 'bottom',
@@ -95,21 +68,26 @@ $(function(){
             if (index == 2 || index == 3 || index == 4) {
                 $("#header").addClass("show");
                 $("#btnTop").addClass("show");
-                $("#fp-nav").addClass("black");
             } else {
                 $("#header").removeClass("show");
                 $("#btnTop").removeClass("show");
+            }
+            if (index == 3 || index == 4) {
+                $("#fp-nav").addClass("black");
+                $("#section3").addClass("ani");
+            } else {
                 $("#fp-nav").removeClass("black");
+                $("#section3").removeClass("ani");
             }
             if (index == 4) {
-                $("#section4").addClass("ani");
+                $("#fp-nav").hide();
             } else {
-                $("#section4").removeClass("ani");
+                $("#fp-nav").show();
             }
         },
     });
 
     $("#btnTop").click(function() {
-        $.fn.fullpage.moveTo("dong-a");
+        $.fn.fullpage.moveTo("DONG-A");
     });
 });
