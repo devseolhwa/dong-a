@@ -1,6 +1,6 @@
 $(function(){
 
-    //lnb
+    // lnb
 	$(".snbList li button").on("click", function(){
 		$(this).parent("li").toggleClass("active").siblings("li").removeClass("active");
 		$(this).next(".depth02").stop().slideToggle();
@@ -21,5 +21,21 @@ $(function(){
     $("#btnTop").on("click", function(){
 		$("html, body").stop().animate({ scrollTop: 0 });
 	});
+
+    // 제공서비스
+    new Swiper(".servicesSwiper", {
+        slidesPerView: 1,
+        centeredSlides: true,
+        speed: 500,
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        pagination: {
+            el: ".pagination",
+            clickable: true,
+        },
+    });
 
 });

@@ -22,7 +22,6 @@
 .snbList > li > ul > li > a:hover, .snbList > li > ul > li.on > a{color: #F9001C;font-weight: 600;}
 .subContent{position: relative;margin-bottom: 100px;box-sizing: border-box;overflow: hidden;}
 
-
 .titleXl{position: relative;display: inline-block;margin-bottom: 25px;color: #000;font-size: 36px;font-weight: 700;line-height: 150%;letter-spacing: -0.4px;word-break: keep-all;}
 .titleXl:before{content: "";position: absolute;right: -10px;bottom: 10px;width: 5px;height: 5px;background: #F9001C;border-radius: 100%;}
 .titleLg{position: relative;display: block;margin-bottom: 35px;color: #000;font-size: 32px;font-weight: 500;line-height: 150%;letter-spacing: -0.4px;word-break: keep-all;}
@@ -75,6 +74,35 @@
 .boardViewNav li p{display: flex;align-items: center;justify-content: center;width: 100px;color: #222;font-size: 16px;font-weight: 600;line-height: 60px;vertical-align: middle;letter-spacing: -1px;}
 .boardViewNav li a{position: relative;width: calc(100% - 100px);padding-left: 12px;box-sizing: border-box;color: #444;font-size: 16px;font-weight: 400;line-height: 60px;letter-spacing: -0.6px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;vertical-align: middle;}
 .boardViewNav li a:hover{color: #000;text-decoration: underline;}
+
+.servicesList{}
+.servicesList > ul{border-top: 2px solid #000;}
+.servicesList > ul > li{display: flex;flex-direction: row;flex-wrap: wrap;justify-content: flex-start;align-items: flex-start;gap: 50px;padding: 35px 0;border-bottom: 1px solid #DDD;box-sizing: border-box;}
+.servicesList .img{position: relative;width: 600px;}
+.servicesList .servicesSwiper{}
+.servicesList .servicesSwiper .swiper-slide img{width: 100%;}
+.servicesList .servicesSwiper + .pagination{position: absolute;bottom: 30px;left: 50%;transform: translateX(-50%);z-index: 1;}
+.servicesList .swiper-pagination-bullet{width: 10px;height: 10px;margin: 0 5px;background: #999;opacity: 1;}
+.servicesList .swiper-pagination-bullet-active{background: #F9001C;}
+.servicesList .text{width: 810px;}
+.servicesList .text .num{color: #F9001C;
+font-size: 20px;
+font-weight: 700;
+line-height: 100%;}
+.servicesList .text .titLg{margin-top: 15px;color: #000;
+font-size: 28px;
+font-weight: 700;
+line-height: 100%;}
+.servicesList .text .titMd{margin-top: 30px; color: #222;
+font-size: 22px;
+font-weight: 600;
+line-height: 100%;}
+.servicesList .text .txt{margin-top: 15px;color: #222;
+font-size: 20px;
+font-weight: 400;
+line-height: 150%;
+letter-spacing: -0.2px;}
+.servicesList .text .titMd + .txt{margin-top: 10px;}
 
 @media screen and (max-width: 1499px){
 
