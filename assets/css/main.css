@@ -81,6 +81,7 @@
 .noticeGroup .noticeArea ul li .txt{overflow: hidden;color: #555;font-size: 18px;font-weight: 500;word-break: keep-all;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;white-space: normal;line-height: 1.5;height: 4.5em;text-align: left;word-wrap: break-word;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;}
 .noticeGroup .noticeArea ul li .date{color: #999;font-size: 16px;font-weight: 500;line-height: 150%;}
 .noticeGroup .recruitArea ul{display: flex;flex-direction: row;flex-wrap: nowrap;align-items: center;gap: 20px;margin-top: 20px;}
+.noticeGroup .recruitArea ul li{flex: 1 auto;}
 .noticeGroup .recruitArea ul li a{display: block;border: 1px solid #DDD;border-radius: 15px;box-sizing: border-box;overflow: hidden;vertical-align: middle;}
 .noticeGroup .recruitArea ul li a img{width: 100%;vertical-align: middle;}
 .surveyGroup{opacity: 0;width: 600px;width: calc(42.5% - 20px);overflow: hidden;}

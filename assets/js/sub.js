@@ -23,19 +23,24 @@ $(function(){
 	});
 
     // 제공서비스
-    new Swiper(".servicesSwiper", {
-        slidesPerView: 1,
-        centeredSlides: true,
-        speed: 500,
-        autoplay: {
-            delay: 4000,
-            disableOnInteraction: false,
-        },
-        loop: true,
-        pagination: {
-            el: ".pagination",
-            clickable: true,
-        },
+    document.querySelectorAll('.servicesList .img').forEach((item) => {
+        const swiperEl = item.querySelector('.servicesSwiper');
+        const paginationEl = item.querySelector('.pagination');
+
+        new Swiper(swiperEl, {
+            slidesPerView: 1,
+            centeredSlides: true,
+            speed: 500,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            pagination: {
+                el: paginationEl,
+                clickable: true,
+            },
+        });
     });
 
 });

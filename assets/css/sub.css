@@ -12,7 +12,7 @@
 #sub .inner{max-width: 1500px;width: 100%;margin: 0 auto;padding: 0 20px;box-sizing: border-box;}
 .snbList{display: flex;align-items: center;flex-direction: row;flex-wrap: wrap;justify-content: flex-start;max-width: 1460px;width: 100%;margin: 0 auto 100px;border-bottom: 1px solid #DDD;box-sizing: border-box;}
 .snbList > li{position: relative;width: 220px;}
-.snbList > li:last-child:after{content: "";position: absolute;left: 0;top: 50%;transform: translateY(-50%);width: 1px;height: 20px;background: #DDD;}
+.snbList > li:nth-child(3):after{content: "";position: absolute;left: 0;top: 50%;transform: translateY(-50%);width: 1px;height: 20px;background: #DDD;}
 .snbList > li.home{width: 60px;height: 60px;}
 .snbList > li.home a{display: flex;align-items: center;justify-content: center;width: 100%;height: 100%;background-color: #F9001C;}
 .snbList > li > button{position: relative;display: block;width: 100%;height: 60px;padding: 0 40px 0 20px;box-sizing: border-box;font-size: 17px;color: #222;font-weight: 500;line-height: normal;text-align: left;}
@@ -61,7 +61,7 @@
 .fileList ul li{display: flex;flex-direction: row;flex-wrap: wrap;align-items: center;justify-content: space-between;width: 100%;padding: 8px 20px;box-sizing: border-box;}
 .fileList ul li + li{border-top: 1px solid #DDD;}
 .fileList ul li p{font-size: 16px;color: #000;font-weight: 400;line-height: 150%;letter-spacing: -0.4px;word-break: keep-all;}
-.fileList ul li a{padding: 8px 20px;border: 1px solid #333;border-radius: 3px;box-sizing: border-box;font-size: 13px;color: #333;font-weight: 600;line-height: 20px;letter-spacing: -0.4px;text-align: center;-webkit-transition: .3s;transition: .3s;}
+.fileList ul li a{padding: 8px 20px;border: 1px solid #333;border-radius: 3px;box-sizing: border-box;font-size: 14px;color: #333;font-weight: 700;line-height: 20px;letter-spacing: -0.4px;text-align: center;-webkit-transition: .3s;transition: .3s;}
 .fileList ul li a:hover{background: #333;color: #fff;}
 .boardViewbody{padding: 80px 50px;border-bottom: 1px solid #DDD;box-sizing: border-box;}
 .boardBtnGroup{display: flex;flex-direction: row;flex-wrap: wrap;align-items: center;justify-content: flex-end;margin-top: 50px;}
@@ -75,33 +75,18 @@
 .boardViewNav li a{position: relative;width: calc(100% - 100px);padding-left: 12px;box-sizing: border-box;color: #444;font-size: 16px;font-weight: 400;line-height: 60px;letter-spacing: -0.6px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;vertical-align: middle;}
 .boardViewNav li a:hover{color: #000;text-decoration: underline;}
 
-.servicesList{}
-.servicesList > ul{border-top: 2px solid #000;}
-.servicesList > ul > li{display: flex;flex-direction: row;flex-wrap: wrap;justify-content: flex-start;align-items: flex-start;gap: 50px;padding: 35px 0;border-bottom: 1px solid #DDD;box-sizing: border-box;}
-.servicesList .img{position: relative;width: 600px;}
-.servicesList .servicesSwiper{}
-.servicesList .servicesSwiper .swiper-slide img{width: 100%;}
-.servicesList .servicesSwiper + .pagination{position: absolute;bottom: 30px;left: 50%;transform: translateX(-50%);z-index: 1;}
+.servicesList {border-top: 2px solid #000;}
+.servicesList > li{display: flex;flex-direction: row;flex-wrap: wrap;justify-content: flex-start;align-items: flex-start;gap: 50px;padding: 35px 0;border-bottom: 1px solid #DDD;box-sizing: border-box;}
+.servicesList .img{position: relative;width: 600px;width: 41.5%;}
+.servicesList .servicesSwiper .swiper-slide img{width: 100%;vertical-align: bottom;}
+.servicesList .servicesSwiper + .pagination{position: absolute;bottom: 30px;left: 50%;transform: translateX(-50%);z-index: 1;line-height: 10px;}
 .servicesList .swiper-pagination-bullet{width: 10px;height: 10px;margin: 0 5px;background: #999;opacity: 1;}
 .servicesList .swiper-pagination-bullet-active{background: #F9001C;}
-.servicesList .text{width: 810px;}
-.servicesList .text .num{color: #F9001C;
-font-size: 20px;
-font-weight: 700;
-line-height: 100%;}
-.servicesList .text .titLg{margin-top: 15px;color: #000;
-font-size: 28px;
-font-weight: 700;
-line-height: 100%;}
-.servicesList .text .titMd{margin-top: 30px; color: #222;
-font-size: 22px;
-font-weight: 600;
-line-height: 100%;}
-.servicesList .text .txt{margin-top: 15px;color: #222;
-font-size: 20px;
-font-weight: 400;
-line-height: 150%;
-letter-spacing: -0.2px;}
+.servicesList .text{width: 810px;width: calc(58.5% - 50px);}
+.servicesList .text .num{color: #F9001C;font-size: 20px;font-weight: 700;line-height: 100%;}
+.servicesList .text .titLg{margin-top: 15px;color: #000;font-size: 28px;font-weight: 700;line-height: 100%;word-break: keep-all;}
+.servicesList .text .titMd{margin-top: 30px; color: #222;font-size: 22px;font-weight: 600;line-height: 100%;word-break: keep-all;}
+.servicesList .text .txt{margin-top: 15px;color: #222;font-size: 20px;font-weight: 400;line-height: 150%;letter-spacing: -0.2px;word-break: keep-all;}
 .servicesList .text .titMd + .txt{margin-top: 10px;}
 
 @media screen and (max-width: 1499px){
@@ -123,6 +108,15 @@ letter-spacing: -0.2px;}
     .dotList li:before{top: 10px;}
 
     .paging{margin-top: 80px;}
+
+    .servicesList > li{gap: 30px;}
+    .servicesList .servicesSwiper + .pagination{bottom: 25px;}
+    .servicesList .swiper-pagination-bullet{margin: 0 4px;}
+    .servicesList .text{width: 810px;width: calc(58.5% - 30px);}
+    .servicesList .text .num{font-size: 18px;}
+    .servicesList .text .titLg{margin-top: 10px;font-size: 24px;}
+    .servicesList .text .titMd{margin-top: 20px;font-size: 20px;}
+    .servicesList .text .txt{margin-top: 10px;font-size: 18px;}
 
 }
 
@@ -146,7 +140,8 @@ letter-spacing: -0.2px;}
     .snbList > li > button{height: 50px;padding: 0 20px 0 10px;font-size: 14px;}
     .snbList > li > button:after{right: 10px;}
     .snbList > li > ul{top: 45px;padding: 10px;}
-    .snbList > li > ul > li > a{font-size: 13px;line-height: 200%;}
+    .snbList > li > ul > li > a{font-size: 14px;line-height: 200%;}
+    .subContent{margin-bottom: 70px;}
 
     .titleXl{margin-bottom: 15px;font-size: 24px;}
     .titleXl:before{width: 6px;height: 6px;}
@@ -164,7 +159,8 @@ letter-spacing: -0.2px;}
     .tableboardList tr{position: relative;display: block;padding: 15px 0;border-bottom: 1px solid #DDD;box-sizing: border-box;}
     .tableboardList td{display: inline-block;height: auto;padding: 0;border-bottom: 0;font-size: 14px;vertical-align: middle;}
     .tableboardList td.subject{display: block;}
-    .tableboardList td.mInline + td.mInline{line-height: 1;border-left: 1px solid #DDD;margin-left: 8px;padding-left: 10px;}
+    .tableboardList td.mInline{line-height: 1;}
+    .tableboardList td.mInline + td.mInline{border-left: 1px solid #DDD;margin-left: 8px;padding-left: 10px;}
     .paging{margin-top: 50px;}
     .paging a, .paging strong{width: 36px;height: 36px;line-height: 36px;margin: 0 2px;font-size: 14px;}
     .paging #page_prev, .paging #page_next{width: 36px;height: 36px;}
@@ -188,6 +184,16 @@ letter-spacing: -0.2px;}
     .boardViewNav{margin-top: 20px;}
     .boardViewNav li p{width: 80px;font-size: 14px;line-height: 50px;}
     .boardViewNav li a{width: calc(100% - 90px);padding-left: 10px;font-size: 14px;line-height: 50px;}
+
+    .servicesList > li{gap: 20px;padding: 20px 0;}
+    .servicesList .img{width: 100%;}
+    .servicesList .servicesSwiper + .pagination{bottom: 20px;}
+    .servicesList .swiper-pagination-bullet{width: 8px;height: 8px;margin: 0 4px;}
+    .servicesList .text{width: 100%;}
+    .servicesList .text .num{font-size: 16px;}
+    .servicesList .text .titLg{font-size: 20px;}
+    .servicesList .text .titMd{font-size: 18px;}
+    .servicesList .text .txt{font-size: 16px;}
 
 }
 
