@@ -18,7 +18,7 @@
 .snbList > li > button{position: relative;display: block;width: 100%;height: 60px;padding: 0 40px 0 20px;box-sizing: border-box;font-size: 17px;color: #222;font-weight: 500;line-height: normal;text-align: left;}
 .snbList > li > button:after{content: "";position: absolute;top: 50%;right: 24px;transform: translateY(-50%);width: 10px;height: 10px;background-image: url(../images/sub/arrow_down_black.svg);background-size: 100%;background-position: center;background-repeat: no-repeat;transition: all 0.5s;}
 .snbList > li > ul{display: none;position: absolute;top: 55px;left: 50%;transform: translateX(-50%);width: 100%;padding: 20px 20px;background: #FFF;border: 1px solid #DDD;border-radius: 5px;box-sizing: border-box;text-align: left;z-index: 50;box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.05);}
-.snbList > li > ul > li > a{position: relative;display: block;width: 100%;box-sizing: border-box;font-size: 17px;color: #333;font-weight: 400;line-height: 250%;letter-spacing: -0.6px;transition: all 0.5s;}
+.snbList > li > ul > li > a{position: relative;display: block;width: 100%;box-sizing: border-box;font-size: 17px;color: #222;font-weight: 400;line-height: 250%;letter-spacing: -0.6px;transition: all 0.5s;}
 .snbList > li > ul > li > a:hover, .snbList > li > ul > li.on > a{color: #F9001C;font-weight: 600;}
 .subContent{position: relative;margin-bottom: 100px;box-sizing: border-box;overflow: hidden;}
 
@@ -27,14 +27,14 @@
 .titleLg{position: relative;display: block;margin-bottom: 35px;color: #000;font-size: 32px;font-weight: 500;line-height: 150%;letter-spacing: -0.4px;word-break: keep-all;}
 .titleMd{position: relative;display: block;margin-bottom: 30px;color: #000;font-size: 30px;font-weight: 700;line-height: 150%;letter-spacing: -0.4px;word-break: keep-all;}
 .titleSm{position: relative;display: block;margin-bottom: 30px;color: #000;font-size: 20px;font-weight: 400;line-height: 160%;letter-spacing: -0.4px;word-break: keep-all;}
-.titleXs{position: relative;display: block;color: #333;font-size: 18px;font-weight: 400;line-height: 160%;letter-spacing: -0.4px;word-break: keep-all;}
+.titleXs{position: relative;display: block;color: #222;font-size: 18px;font-weight: 400;line-height: 160%;letter-spacing: -0.4px;word-break: keep-all;}
 .hr{border: 0;border-top: 1px dashed #DDD;margin: 100px 0;box-sizing: border-box;}
-.dotList li{position: relative;padding-left: 20px;box-sizing: border-box;color: #333;font-size: 18px;font-weight: 400;line-height: 150%;letter-spacing: -0.2px;word-break: keep-all;}
-.dotList li:before{content: "";position: absolute;top: 12px;left: 5px;display: block;width: 3px;height: 3px;background: #333;border-radius: 100%;}
+.dotList li{position: relative;padding-left: 20px;box-sizing: border-box;color: #222;font-size: 18px;font-weight: 400;line-height: 150%;letter-spacing: -0.2px;word-break: keep-all;}
+.dotList li:before{content: "";position: absolute;top: 12px;left: 5px;display: block;width: 3px;height: 3px;background: #222;border-radius: 100%;}
 
 .tableboardList{width: 100%;border-top: 2px solid #F9001C;border-spacing: 0;border-collapse: separate;box-sizing: border-box;}
 .tableboardList thead tr:last-child > * {border-bottom: 1px solid #DDD;}
-.tableboardList th, .tableboardList td {height: 60px;padding: 15px 10px;color: #333;font-size: 16px;text-align: center;line-height: 150%;box-sizing: border-box;}
+.tableboardList th, .tableboardList td {height: 60px;padding: 15px 10px;color: #222;font-size: 16px;text-align: center;line-height: 150%;box-sizing: border-box;}
 .tableboardList th {position: relative;background: #f9f9f9;font-weight: 700;letter-spacing: -0.8px;}
 .tableboardList td {border-bottom: 1px solid #DDD;font-weight: 400;letter-spacing: -0.2px;}
 .tableboardList td.subject{text-align: left;}
@@ -43,7 +43,7 @@
 .noticeLabel{display: inline-block;padding: 8px 12px;border-radius: 5px;background: #F9001C;box-sizing: border-box;color: #FFF;font-size: 14px;font-weight: 600;line-height: 100%;letter-spacing: -0.2px;text-align: center;vertical-align: middle;}
 .paging {margin-top: 100px;text-align: center;font-size: 0;}
 .paging a, .paging strong{display: inline-block;width: 40px;height: 40px;line-height: 40px;margin: 0 3px;border-radius: 100%;box-sizing: border-box;color: #111;font-size: 15px;font-weight: 500;vertical-align: middle;text-decoration: none;z-index: 10;}
-.paging strong{background: #333;color: #FFF;font-weight: 700;}
+.paging strong{background: #222;color: #FFF;font-weight: 700;}
 .paging #page_prev, .paging #page_next{width: 40px;height: 40px;background-position: center;background-repeat: no-repeat;box-sizing: border-box;overflow: hidden;text-indent: -9999px;white-space: nowrap;}
 .paging #page_prev{background-image: url(../images/sub/arrow_prev.svg);}
 .paging #page_next{background-image: url(../images/sub/arrow_next.svg);}
@@ -61,11 +61,11 @@
 .fileList ul li{display: flex;flex-direction: row;flex-wrap: wrap;align-items: center;justify-content: space-between;width: 100%;padding: 8px 20px;box-sizing: border-box;}
 .fileList ul li + li{border-top: 1px solid #DDD;}
 .fileList ul li p{font-size: 16px;color: #000;font-weight: 400;line-height: 150%;letter-spacing: -0.4px;word-break: keep-all;}
-.fileList ul li a{padding: 8px 20px;border: 1px solid #333;border-radius: 3px;box-sizing: border-box;font-size: 14px;color: #333;font-weight: 700;line-height: 20px;letter-spacing: -0.4px;text-align: center;-webkit-transition: .3s;transition: .3s;}
-.fileList ul li a:hover{background: #333;color: #fff;}
+.fileList ul li a{padding: 8px 20px;border: 1px solid #222;border-radius: 3px;box-sizing: border-box;font-size: 14px;color: #222;font-weight: 700;line-height: 20px;letter-spacing: -0.4px;text-align: center;-webkit-transition: .3s;transition: .3s;}
+.fileList ul li a:hover{background: #222;color: #fff;}
 .boardViewbody{padding: 80px 50px;border-bottom: 1px solid #DDD;box-sizing: border-box;}
 .boardBtnGroup{display: flex;flex-direction: row;flex-wrap: wrap;align-items: center;justify-content: flex-end;margin-top: 50px;}
-.boardBtnGroup button, .boardBtnGroup a{display: inline-flex;justify-content: center;align-items: center;padding: 15px 35px;background: #333;border: 1px solid #333;border-radius: 5px;box-sizing: border-box;color: #FFF;box-sizing: border-box;font-size: 16px;font-weight: 600;line-height: normal;letter-spacing: -0.4px;transition: .3s;-webkit-transition: .3s;}
+.boardBtnGroup button, .boardBtnGroup a{display: inline-flex;justify-content: center;align-items: center;padding: 15px 35px;background: #222;border: 1px solid #222;border-radius: 5px;box-sizing: border-box;color: #FFF;box-sizing: border-box;font-size: 16px;font-weight: 600;line-height: normal;letter-spacing: -0.4px;transition: .3s;-webkit-transition: .3s;}
 .boardBtnGroup button + button, .boardBtnGroup a + a{margin-left: 10px;}
 .boardBtnGroup button:hover, .boardBtnGroup a:hover{background: #000;border: 1px solid #000;color: #fff;}
 .boardViewNav{margin-top: 50px;border-top: 1px solid #DDD;border-bottom: 1px solid #DDD;box-sizing: border-box;}
@@ -76,7 +76,7 @@
 .boardViewNav li a:hover{color: #000;text-decoration: underline;}
 
 .servicesList {border-top: 2px solid #000;}
-.servicesList > li{display: flex;flex-direction: row;flex-wrap: wrap;justify-content: flex-start;align-items: flex-start;gap: 50px;padding: 35px 0;border-bottom: 1px solid #DDD;box-sizing: border-box;}
+.servicesList > li{display: flex;flex-direction: row;flex-wrap: wrap;justify-content: flex-start;align-items: flex-start;gap: 50px;padding: 50px 0;border-bottom: 1px solid #DDD;box-sizing: border-box;}
 .servicesList .img{position: relative;width: 600px;width: 41.5%;}
 .servicesList .servicesSwiper .swiper-slide img{width: 100%;vertical-align: bottom;}
 .servicesList .servicesSwiper + .pagination{position: absolute;bottom: 30px;left: 50%;transform: translateX(-50%);z-index: 1;line-height: 10px;}
@@ -109,7 +109,7 @@
 
     .paging{margin-top: 80px;}
 
-    .servicesList > li{gap: 30px;}
+    .servicesList > li{gap: 30px;padding: 30px 0;}
     .servicesList .servicesSwiper + .pagination{bottom: 25px;}
     .servicesList .swiper-pagination-bullet{margin: 0 4px;}
     .servicesList .text{width: 810px;width: calc(58.5% - 30px);}
