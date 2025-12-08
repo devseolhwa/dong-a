@@ -15,7 +15,7 @@
 .snbList > li:nth-child(3):after{content: "";position: absolute;left: 0;top: 50%;transform: translateY(-50%);width: 1px;height: 20px;background: #DDD;}
 .snbList > li.home{width: 60px;height: 60px;}
 .snbList > li.home a{display: flex;align-items: center;justify-content: center;width: 100%;height: 100%;background-color: #F9001C;}
-.snbList > li > button{position: relative;display: block;width: 100%;height: 60px;padding: 0 40px 0 20px;box-sizing: border-box;font-size: 17px;color: #222;font-weight: 500;line-height: normal;text-align: left;}
+.snbList > li > button{position: relative;display: block;width: 100%;height: 60px;padding: 0 40px 0 20px;box-sizing: border-box;font-size: 17px;color: #222;font-weight: 500;line-height: normal;text-align: left;word-break: keep-all;}
 .snbList > li > button:after{content: "";position: absolute;top: 50%;right: 24px;transform: translateY(-50%);width: 10px;height: 10px;background-image: url(../images/sub/arrow_down_black.svg);background-size: 100%;background-position: center;background-repeat: no-repeat;transition: all 0.5s;}
 .snbList > li > ul{display: none;position: absolute;top: 55px;left: 50%;transform: translateX(-50%);width: 100%;padding: 20px 20px;background: #FFF;border: 1px solid #DDD;border-radius: 5px;box-sizing: border-box;text-align: left;z-index: 50;box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.05);}
 .snbList > li > ul > li > a{position: relative;display: block;width: 100%;box-sizing: border-box;font-size: 17px;color: #222;font-weight: 400;line-height: 250%;letter-spacing: -0.6px;transition: all 0.5s;}
@@ -24,13 +24,6 @@
 
 .titleXl{position: relative;display: inline-block;margin-bottom: 25px;color: #000;font-size: 36px;font-weight: 700;line-height: 150%;letter-spacing: -0.4px;word-break: keep-all;}
 .titleXl:before{content: "";position: absolute;right: -10px;bottom: 10px;width: 5px;height: 5px;background: #F9001C;border-radius: 100%;}
-.titleLg{position: relative;display: block;margin-bottom: 35px;color: #000;font-size: 32px;font-weight: 500;line-height: 150%;letter-spacing: -0.4px;word-break: keep-all;}
-.titleMd{position: relative;display: block;margin-bottom: 30px;color: #000;font-size: 30px;font-weight: 700;line-height: 150%;letter-spacing: -0.4px;word-break: keep-all;}
-.titleSm{position: relative;display: block;margin-bottom: 30px;color: #000;font-size: 20px;font-weight: 400;line-height: 160%;letter-spacing: -0.4px;word-break: keep-all;}
-.titleXs{position: relative;display: block;color: #222;font-size: 18px;font-weight: 400;line-height: 160%;letter-spacing: -0.4px;word-break: keep-all;}
-.hr{border: 0;border-top: 1px dashed #DDD;margin: 100px 0;box-sizing: border-box;}
-.dotList li{position: relative;padding-left: 20px;box-sizing: border-box;color: #222;font-size: 18px;font-weight: 400;line-height: 150%;letter-spacing: -0.2px;word-break: keep-all;}
-.dotList li:before{content: "";position: absolute;top: 12px;left: 5px;display: block;width: 3px;height: 3px;background: #222;border-radius: 100%;}
 
 .tableboardList{width: 100%;border-top: 2px solid #F9001C;border-spacing: 0;border-collapse: separate;box-sizing: border-box;}
 .tableboardList thead tr:last-child > * {border-bottom: 1px solid #DDD;}
@@ -89,7 +82,42 @@
 .servicesList .text .txt{margin-top: 15px;color: #222;font-size: 20px;font-weight: 400;line-height: 150%;letter-spacing: -0.2px;word-break: keep-all;}
 .servicesList .text .titMd + .txt{margin-top: 10px;}
 
-@media screen and (max-width: 1499px){
+.itemList{margin-top: 100px;border-top: 2px solid #F9001C;box-sizing: border-box;}
+.itemList > li{display: flex;flex-direction: row;flex-wrap: wrap;align-items: flex-start;justify-content: flex-start;margin: 50px 0;padding-bottom: 50px;border-bottom: 1px dashed #AAA;box-sizing: border-box;}
+.itemList > li:last-child{margin-bottom: 0;}
+.itemList > li > .title{width: 310px;color: #111;font-size: 30px;font-weight: 700;line-height: 150%;letter-spacing: -0.2px;}
+.itemList > li > .text{width: calc(100% - 310px);}
+
+.greetingGroup{display: flex;flex-direction: row;flex-wrap: wrap;align-items: flex-start;gap: 50px;}
+.greetingGroup > .img{width: calc(43% - 25px);}
+.greetingGroup > .img img{width: 100%;vertical-align: bottom;}
+.greetingGroup > .text{width: calc(57% - 25px);display: flex;flex-direction: column;flex-wrap: nowrap;align-items: flex-start;gap: 40px;}
+.greetingGroup > .text strong{color: #222;font-size: 24px;font-weight: 600;line-height: 150%;letter-spacing: 0.5px;font-family: 'Paperozi';word-break: keep-all;}
+.greetingGroup > .text p{color: #555;font-size: 18px;font-weight: 400;line-height: 160%;letter-spacing: -0.2px;word-break: keep-all;}
+.greetingGroup > .text p.sign{display: flex;flex-direction: row;flex-wrap: wrap;align-items: flex-start;color: #222;font-size: 18px;font-weight: 600;line-height: 150%;letter-spacing: -0.2px;}
+.greetingGroup > .text p.sign b{margin: 0 10px;font-size: 24px;}
+.greetingGroup > .text p.sign i.en img{vertical-align: bottom;}
+
+.managementBg{width: 100%;padding: 133px 0;background: url(../images/sub/bg_management.jpg) no-repeat center center fixed;background-size: cover;box-sizing: border-box;text-align: center;}
+.managementBg strong{display: block;color: #FFF;font-size: 34px;font-weight: 700;line-height: 150%;letter-spacing: -0.2px;word-break: keep-all;}
+.managementBg span{display: block;margin-top: 5px;color: #FFF;font-size: 20px;font-weight: 400;line-height: 150%;word-break: keep-all;}
+.managementBg p{margin-top: 30px;color: #FFF;font-size: 28px;font-weight: 600;line-height: 150%;letter-spacing: -0.2px;word-break: keep-all;}
+
+.managementBox{padding: 60px 50px;background: #FAFAFA;box-sizing: border-box;}
+.managementBox > ul > li{    display: flex;padding-bottom: 20px;margin-bottom: 20px;border-bottom: 1px solid #D9D9D9;box-sizing: border-box;color: #222;font-size: 21px;font-weight: 400;line-height: 150%;letter-spacing: -0.2px;word-break: keep-all;}
+.managementBox > ul > li span{margin-right: 20px;font-weight: 700;}
+.managementBox > ul > li p{display: inline-block;}
+.managementBox > p{margin-top: 30px;margin-bottom: 30px;color: #222;font-size: 24px;font-weight: 500;line-height: 150%;letter-spacing: -0.2px;word-break: keep-all;}
+
+.counselingGroup{padding: 100px 60px;background-image: url(../images/sub/bg_counseling.jpg);background-position: center;background-size: cover;background-repeat: no-repeat;box-sizing: border-box;}
+.counselingGroup > h5{color: #FFF;font-size: 36px;font-weight: 700;line-height: 130%;word-break: keep-all;}
+.counselingGroup > p{margin-top: 30px;color: #FFF;font-size: 20px;font-weight: 400;line-height: 150%;letter-spacing: -0.2px;word-break: keep-all;}
+.counselingGroup .call{margin-top: 45px;display: flex;flex-direction: row;flex-wrap: wrap;gap: 30px;}
+.counselingGroup .call li{display: flex;flex-direction: column;flex-wrap: nowrap;align-items: flex-start;justify-content: center;width: 420px;height: 120px;padding: 25px 40px 25px 120px;background-image: url(../images/sub/icon_call.svg);background-position: 40px center;background-repeat: no-repeat;border-radius: 20px;background-color: rgba(255, 255, 255, 0.20);backdrop-filter: blur(7.5px);box-sizing: border-box;}
+.counselingGroup .call li b{color: #FFF;font-size: 20px;font-weight: 700;line-height: 150%;}
+.counselingGroup .call li p{margin-top: 5px;color: #FFF;font-size: 18px;font-weight: 500;line-height: 150%;}
+
+@media screen and (max-width: 1399px){
 
     #subVisual{height: 400px;}
 
@@ -97,13 +125,6 @@
 
 @media screen and (max-width: 1199px){
 
-    .titleXl{margin-bottom: 30px;font-size: 30px;}
-    .titleXl:before{width: 8px;height: 8px;}
-    .titleLg{margin-bottom: 25px;font-size: 26px;}
-    .titleMd{margin-bottom: 20px;font-size: 24px;}
-    .titleSm{margin-bottom: 20px;font-size: 18px;}
-    .titleXs{font-size: 17px;}
-    .hr{margin: 80px 0;}
     .dotList li{font-size: 16px;}
     .dotList li:before{top: 10px;}
 
@@ -118,12 +139,30 @@
     .servicesList .text .titMd{margin-top: 20px;font-size: 20px;}
     .servicesList .text .txt{margin-top: 10px;font-size: 18px;}
 
+    .itemList{margin-top: 50px;}
+    .itemList > li{margin: 30px 0;padding-bottom: 30px;}
+    .itemList > li > .title{width: 260px;font-size: 24px;}
+    .itemList > li > .text{width: calc(100% - 260px);}
+
+    .managementBg{padding: 100px 0;}
+    .managementBg strong{font-size: 30px;}
+    .managementBg span{font-size: 18px;}
+    .managementBg p{margin-top: 15px;font-size: 22px;}
+
+    .managementBox{padding: 40px;}
+    .managementBox > p{font-size: 20px;}
+    .managementBox > ul > li{padding-bottom: 15px;margin-bottom: 15px;font-size: 18px;}
+    .managementBox > ul > li span{margin-right: 10px;}
+
+    .counselingGroup{padding: 70px 40px;}
+    .counselingGroup > h5{font-size: 30px;}
+    .counselingGroup > p{margin-top: 20px;font-size: 16px;}
+    .counselingGroup .call{margin-top: 30px;gap: 20px;}
+    .counselingGroup .call li{width: calc(50% - 10px);height: auto;padding: 25px 20px 25px 80px;background-position: 30px center;background-size: 30px;}
+    .counselingGroup .call li b{font-size: 18px;}
+    .counselingGroup .call li p{margin-top: 0;font-size: 16px;}
+
 }
-
-@media screen and (max-width: 1024px){
-
-}
-
 @media screen and (max-width: 767px){
 
     #subVisual{height: 280px;}
@@ -145,13 +184,6 @@
 
     .titleXl{margin-bottom: 15px;font-size: 24px;}
     .titleXl:before{width: 6px;height: 6px;}
-    .titleLg{margin-bottom: 15px;font-size: 20px;}
-    .titleMd{margin-bottom: 15px;font-size: 21px;}
-    .titleSm{margin-bottom: 15px;font-size: 16px;}
-    .titleXs{font-size: 15px;}
-    .hr{margin: 50px 0;}
-    .dotList li{padding-left: 15px;font-size: 14px;}
-    .dotList li:before{top: 9px;left: 3px;}
 
     .tableboardList colgroup,
     .tableboardList thead{display: none;}
@@ -195,6 +227,36 @@
     .servicesList .text .titMd{font-size: 18px;}
     .servicesList .text .txt{font-size: 16px;}
 
+    .greetingGroup{gap: 20px;}
+    .greetingGroup > .img{width: 100%;}
+    .greetingGroup > .text{width: 100%;gap: 20px;}
+    .greetingGroup > .text strong{font-size: 20px;}
+    .greetingGroup > .text p{font-size: 16px;}
+    .greetingGroup > .text p.sign{font-size: 16px;}
+    .greetingGroup > .text p.sign b{margin: 0 10px;font-size: 20px;}
+    .greetingGroup > .text p.sign i.en{width: 97px;}
+
+    .itemList{margin-top: 30px;}
+    .itemList > li{margin: 20px 0;padding-bottom: 20px;}
+    .itemList > li > .title{width: 100%;font-size: 20px;}
+    .itemList > li > .text{width: 100%;margin-top: 20px;}
+
+    .managementBg{padding: 70px 20px;}
+    .managementBg strong{font-size: 18px;}
+    .managementBg span{font-size: 13px;}
+    .managementBg p{margin-top: 10px;font-size: 16px;}
+    
+    .managementBox{padding: 20px;}
+    .managementBox > ul > li{padding-bottom: 10px;margin-bottom: 10px;font-size: 15px;}
+    .managementBox > p{margin-top: 15px;margin-bottom: 15px;font-size: 16px;}
+
+    .counselingGroup{padding: 30px;background-image: url(../images/sub/bg_counseling_m.jpg);}
+    .counselingGroup > h5{font-size: 20px;}
+    .counselingGroup > p{margin-top: 10px;font-size: 14px;}
+    .counselingGroup .call{margin-top: 20px;gap: 10px;}
+    .counselingGroup .call li{width: 100%;padding: 20px 20px 20px 75px;background-position: 25px center;border-radius: 15px;}
+    .counselingGroup .call li b{font-size: 16px;}
+    .counselingGroup .call li p{font-size: 14px;}
 }
 
 @keyframes scale{ 

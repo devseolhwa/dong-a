@@ -81,21 +81,21 @@
 #btnTop:before{content: " ";position: absolute;left: 0;top: 0;width: 70px;height: 70px;background-color: transparent;border-radius: 100%;z-index: 0;}
 #btnTop:hover:before{animation: btnTopAni 1.8s infinite;-webkit-animation: btnTopAni 1.8s infinite;}
 
-@media screen and (max-width: 1599px){
-
-    #header .inner{padding: 0 40px;}
-    .sitemapHeader{padding: 0 40px;}
-    .sitemapBody > ul > li > a{font-size: 30px;}
-    .sitemapBody > ul > li > a:before{left: -15px;width: 30px;height: 30px;}
-    .sitemapBody > ul > li > ul > li > a{font-size: 20px;font-weight: 500;line-height: 200%;}
-    #footer .footerInner{padding: 0 40px;}
-
-}
-@media screen and (max-width: 1199px){
+@media screen and (max-width: 1399px){
 
     .tabletShow {display: block !important;}
 	.tabletShowInline {display: inline-block !important;}
     .tabletHide{display: none !important;}
+
+    #header .inner{padding: 0 20px;}
+    .sitemapHeader{padding: 0 20px;}
+    .sitemapBody > ul > li > a{font-size: 30px;}
+    .sitemapBody > ul > li > a:before{left: -15px;width: 30px;height: 30px;}
+    .sitemapBody > ul > li > ul > li > a{font-size: 20px;font-weight: 500;line-height: 200%;}
+    #footer .footerInner{padding: 0 20px;}
+
+}
+@media screen and (max-width: 1199px){
 
     #header{height: 80px;}
     #header .logo a:after{width: 210px;height: 50px;}
@@ -123,19 +123,17 @@
     .mobileHide{display: none !important;}
 
     #header{height: 70px;}
-    #header .inner{padding: 0 20px;}
     #header .logo a:after{width: 170px;height: 40px;}
     #header .logo a img{width: 170px;height: 40px;}
     .sitemapHeader .logo a img{width: 170px;height: 40px;}
     .langsGroup{display: none;}
-    .sitemapHeader{height: 70px;padding: 0 20px;}
+    .sitemapHeader{height: 70px;}
     .sitemapHeader .langsGroup{display: flex;}
     .sitemapBody{max-width: none;}
     .sitemapBody > ul > li > a{font-size: 25px;}
     .sitemapBody > ul > li > ul > li > a{font-size: 16px;}
 
     #footer{background-image: url(../images/layout/bg_footer_m.jpg);}
-    #footer .footerInner{padding: 0 20px;}
     .footerLogo img{width: 100px;height: 63px;}
     .footerAddress h1{font-size: 24px;}
     .footerAddress h1 span{font-size: 20px;}
