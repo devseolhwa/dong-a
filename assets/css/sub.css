@@ -11,7 +11,7 @@
 
 #sub .inner{max-width: 1500px;width: 100%;margin: 0 auto;padding: 0 20px;box-sizing: border-box;}
 .snbList{display: flex;align-items: center;flex-direction: row;flex-wrap: wrap;justify-content: flex-start;max-width: 1460px;width: 100%;margin: 0 auto 100px;border-bottom: 1px solid #DDD;box-sizing: border-box;}
-.snbList > li{position: relative;width: 220px;}
+.snbList > li{position: relative;width: 250px;}
 .snbList > li:nth-child(3):after{content: "";position: absolute;left: 0;top: 50%;transform: translateY(-50%);width: 1px;height: 20px;background: #DDD;}
 .snbList > li.home{width: 60px;height: 60px;}
 .snbList > li.home a{display: flex;align-items: center;justify-content: center;width: 100%;height: 100%;background-color: #F9001C;}
@@ -68,8 +68,8 @@
 .boardViewNav li a{position: relative;width: calc(100% - 100px);padding-left: 12px;box-sizing: border-box;color: #444;font-size: 16px;font-weight: 400;line-height: 60px;letter-spacing: -0.6px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;vertical-align: middle;}
 .boardViewNav li a:hover{color: #000;text-decoration: underline;}
 
-.servicesList {border-top: 2px solid #000;}
-.servicesList > li{display: flex;flex-direction: row;flex-wrap: wrap;justify-content: flex-start;align-items: flex-start;gap: 50px;padding: 50px 0;border-bottom: 1px solid #DDD;box-sizing: border-box;}
+.servicesList {border-top: 2px solid #F9001C;}
+.servicesList > li{display: flex;flex-direction: row;flex-wrap: wrap;justify-content: flex-start;align-items: flex-start;gap: 50px;padding: 50px 0;border-bottom: 1px dashed #AAA;box-sizing: border-box;scroll-margin-top: 100px;}
 .servicesList .img{position: relative;width: 600px;width: 41.5%;}
 .servicesList .servicesSwiper .swiper-slide img{width: 100%;vertical-align: bottom;}
 .servicesList .servicesSwiper + .pagination{position: absolute;bottom: 30px;left: 50%;transform: translateX(-50%);z-index: 1;line-height: 10px;}
@@ -117,6 +117,38 @@
 .counselingGroup .call li b{color: #FFF;font-size: 20px;font-weight: 700;line-height: 150%;}
 .counselingGroup .call li p{margin-top: 5px;color: #FFF;font-size: 18px;font-weight: 500;line-height: 150%;}
 
+.historyWrap{position: relative;padding: 5px 0;margin: 10px 0;box-sizing: border-box;}
+.historyWrap:before{content: "";position: absolute;top: 0;left: 135px;width: 1px;height: 100%;border-left: 1px dotted #222;box-sizing: border-box;}
+.historyWrap > dl{overflow: hidden;}
+.historyWrap > dl + dl{padding-top: 100px;}
+.historyWrap > dl > dt{float: left;width: 180px;color: #F9001C;font-family: 'Paperozi';font-size: 32px;font-weight: 700;line-height: 100%;letter-spacing: -0.2px;font-family: 'Paperozi';}
+.historyWrap > dl > dd{float: left;width: calc(100% - 180px);}
+.historyWrap > dl > dd > div{position: relative;display: flex;flex-direction: row;flex-wrap: wrap;align-items: flex-start;}
+.historyWrap > dl > dd > div + div{margin-top: 50px;}
+.historyWrap > dl > dd strong{width: 100px;color: #222;font-size: 32px;font-weight: 700;line-height: 100%;letter-spacing: -0.2px;font-family: 'Paperozi';}
+.historyWrap > dl > dd strong:before{content: "";position: absolute;top: 5px;left: -55px;width: 21px;height: 21px;background: #FFF;border: 1px solid #F9001C;border-radius: 100%;box-sizing: border-box;}
+.historyWrap > dl > dd strong:after{content: "";position: absolute;top: 12px;left: -48px;width: 7px;height: 7px;background: #F9001C;border-radius: 100%;box-sizing: border-box;}
+.historyWrap > dl > dd ul{width: calc(100% - 100px);margin-top: 3px;}
+.historyWrap > dl > dd ul > li{color: #555;font-size: 18px;font-weight: 500;line-height: 150%;word-break: keep-all;}
+.historyWrap > dl > dd ul > li + li{margin-top: 15px;}
+
+.mapList {border-top: 2px solid #F9001C;box-sizing: border-box;}
+.mapList > li{display: flex;flex-direction: row;flex-wrap: wrap;justify-content: flex-start;align-items: flex-start;gap: 50px;padding: 50px 0;border-bottom: 1px dashed #AAA;box-sizing: border-box;}
+.mapList .mapArea{position: relative;width: 750px;width: 53%;}
+.mapList .addrArea{width: calc(47% - 50px);}
+.mapList .addrArea strong{color: #111;font-size: 30px;font-weight: 700;line-height: 150%;letter-spacing: -0.2px;}
+.mapList .addrArea ul{margin-top: 35px;}
+.mapList .addrArea ul li{display: flex;flex-direction: row;flex-wrap: wrap;align-items: flex-start;}
+.mapList .addrArea ul li + li{margin-top: 20px;}
+.mapList .addrArea ul li b{width: 135px;color: #222;font-size: 24px;font-weight: 700;line-height: 150%;letter-spacing: -0.2px;}
+.mapList .addrArea ul li p{width: calc(100% - 135px);margin-top: 5px;color: #555;font-size: 20px;font-weight: 400;line-height: 140%;letter-spacing: -0.2px;word-break: keep-all;}
+.addrList{margin-top: 50px;}
+.addrList > ul{display: flex;flex-direction: row;flex-wrap: wrap;justify-content: flex-start;gap: 36px;}
+.addrList > ul > li{display: flex;flex-direction: column;flex-wrap: nowrap;align-items: flex-start;gap: 10px;width: calc(33.33% - 24px);padding: 20px;border: 1px solid #ddd;box-sizing: border-box;}
+.addrList .name{color: #222;font-size: 24px;font-weight: 700;line-height: 150%;letter-spacing: -0.2px;word-break: keep-all;}
+.addrList .addr{color: #555;font-size: 16px;font-weight: 400;line-height: 150%;letter-spacing: -0.2px;word-break: keep-all;}
+.addrList .tel{color: #555;font-size: 16px;font-weight: 400;line-height: 150%;letter-spacing: -0.2px;word-break: keep-all;}
+
 @media screen and (max-width: 1399px){
 
     #subVisual{height: 400px;}
@@ -130,7 +162,7 @@
 
     .paging{margin-top: 80px;}
 
-    .servicesList > li{gap: 30px;padding: 30px 0;}
+    .servicesList > li{gap: 30px;padding: 30px 0;scroll-margin-top: 80px;}
     .servicesList .servicesSwiper + .pagination{bottom: 25px;}
     .servicesList .swiper-pagination-bullet{margin: 0 4px;}
     .servicesList .text{width: 810px;width: calc(58.5% - 30px);}
@@ -161,6 +193,29 @@
     .counselingGroup .call li{width: calc(50% - 10px);height: auto;padding: 25px 20px 25px 80px;background-position: 30px center;background-size: 30px;}
     .counselingGroup .call li b{font-size: 18px;}
     .counselingGroup .call li p{margin-top: 0;font-size: 16px;}
+
+    .historyWrap > dl > dt{font-size: 28px;}
+    .historyWrap > dl > dd strong{width: 80px;font-size: 28px;}
+    .historyWrap > dl > dd strong:before{top: 3px;}
+    .historyWrap > dl > dd strong:after{top: 10px;}
+    .historyWrap > dl > dd ul{width: calc(100% - 80px);margin-top: 2px;}
+    .historyWrap > dl > dd ul > li{font-size: 16px;}
+
+    .mapList > li{gap: 30px;padding: 40px 0;}
+    .mapList .mapArea{width: 50%;}
+    .mapList .mapArea .mapSection{height: 400px !important;}
+    .mapList .addrArea{width: calc(50% - 30px);}
+    .mapList .addrArea strong{font-size: 26px;}
+    .mapList .addrArea ul{margin-top: 20px;}
+    .mapList .addrArea ul li + li{margin-top: 10px;}
+    .mapList .addrArea ul li b{width: 110px;font-size: 20px;}
+    .mapList .addrArea ul li p{width: calc(100% - 110px);margin-top: 4px;font-size: 18px;}
+    .addrList{margin-top: 40px;}
+    .addrList > ul{gap: 30px;}
+    .addrList > ul > li{width: calc(50% - 15px);gap: 5px;}
+    .addrList .name{font-size: 20px;}
+    .addrList .addr{font-size: 15px;}
+    .addrList .tel{font-size: 15px;}
 
 }
 @media screen and (max-width: 767px){
@@ -217,7 +272,7 @@
     .boardViewNav li p{width: 80px;font-size: 14px;line-height: 50px;}
     .boardViewNav li a{width: calc(100% - 90px);padding-left: 10px;font-size: 14px;line-height: 50px;}
 
-    .servicesList > li{gap: 20px;padding: 20px 0;}
+    .servicesList > li{gap: 20px;padding: 20px 0;scroll-margin-top: 70px;}
     .servicesList .img{width: 100%;}
     .servicesList .servicesSwiper + .pagination{bottom: 20px;}
     .servicesList .swiper-pagination-bullet{width: 8px;height: 8px;margin: 0 4px;}
@@ -257,6 +312,37 @@
     .counselingGroup .call li{width: 100%;padding: 20px 20px 20px 75px;background-position: 25px center;border-radius: 15px;}
     .counselingGroup .call li b{font-size: 16px;}
     .counselingGroup .call li p{font-size: 14px;}
+
+    .historyWrap{margin: 0;}
+    .historyWrap:before{left: 15px;}
+    .historyWrap > dl{padding-left: 40px;box-sizing: border-box;}
+    .historyWrap > dl + dl{padding-top: 50px;}
+    .historyWrap > dl > dt{margin-bottom: 20px;font-size: 22px;}
+    .historyWrap > dl > dd{width: 100%;}
+    .historyWrap > dl > dd > div + div{margin-top: 20px;}
+    .historyWrap > dl > dd strong{width: 50px;font-size: 20px;}
+    .historyWrap > dl > dd strong:before{top: 1px;left: -35px;}
+    .historyWrap > dl > dd strong:after{top: 8px;left: -28px;}
+    .historyWrap > dl > dd ul{width: calc(100% - 50px);}
+    .historyWrap > dl > dd ul > li{font-size: 14px;}
+    .historyWrap > dl > dd ul > li + li{margin-top: 15px;}
+
+    .mapList > li{gap: 20px;padding: 20px 0;}
+    .mapList .mapArea{width: 100%;}
+    .mapList .mapArea .mapSection{height: 250px !important;}
+    .mapList .addrArea{width: 100%;}
+    .mapList .addrArea strong{font-size: 20px;}
+    .mapList .addrArea ul{margin-top: 10px;}
+    .mapList .addrArea ul li + li{margin-top: 5px;}
+    .mapList .addrArea ul li b{width: 90px;font-size: 16px;}
+    .mapList .addrArea ul li p{width: calc(100% - 90px);margin-top: 3px;font-size: 15px;}
+    .addrList{margin-top: 20px;}
+    .addrList > ul{gap: 10px;}
+    .addrList > ul > li{width: 100%;padding: 15px;}
+    .addrList .name{font-size: 16px;}
+    .addrList .addr{font-size: 14px;}
+    .addrList .tel{font-size: 14px;}
+
 }
 
 @keyframes scale{ 

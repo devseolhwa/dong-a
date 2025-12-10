@@ -27,6 +27,23 @@ $(function(){
                 return number < 10 ? "0" + number : number;
             },
         },
+        on: {
+            init: function () {
+                const swiper = this;
+                swiper.slides.removeClass('swiper-slide-play');
+                setTimeout(function(){
+                    swiper.slides.eq(swiper.activeIndex).addClass('swiper-slide-play');
+                }, 800);
+            },
+            slideChangeTransitionStart: function(){
+                const swiper = this;
+                swiper.slides.removeClass('swiper-slide-play');
+            },
+            slideChangeTransitionEnd: function(){
+                const swiper = this;
+                swiper.slides.eq(swiper.activeIndex).addClass('swiper-slide-play');
+            }
+        }
     });
     $(".swiper-button-autoplay").click(function () {
         if ($(this).hasClass("on")) {

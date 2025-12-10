@@ -40,6 +40,12 @@
 .visualSwiper .swiper-slide:not(.swiper-slide-active) img{opacity: 0;}
 .visualSwiper .swiper-slide-active .visualText p{opacity: 1;transform: none;-webkit-transform: none;-moz-transform: none;-ms-transform: none;-o-transform: none;}
 
+.visualSwiper .swiper-slide .visualText p{opacity: 0;transform: translateY(1rem);transition: opacity 1s ease, transform 1.5s ease;}
+.visualSwiper .swiper-slide.swiper-slide-play .visualText p{opacity: 1;transform: none;-webkit-transform: none;-moz-transform: none;-ms-transform: none;-o-transform: none;}
+.visualSwiper .swiper-slide.swiper-slide-play .visualText p.delay1{transition-delay: 0.5s;}
+.visualSwiper .swiper-slide.swiper-slide-play .visualText p.delay2{transition-delay: 1s;}
+
+
 #section2{position: relative;}
 .servicesGroup{display: flex;justify-content: center;align-items: center;flex-direction: column;width: 100%;height: 100vh;padding: 100px 0 0;box-sizing: border-box;}
 .servicesGroup .titleGroup{display: flex;flex-direction: column;align-items: center;justify-content: center;height: 25%;min-height: 170px;box-sizing: border-box;}
@@ -99,6 +105,13 @@
 #section3.ani .noticeGroup .noticeArea{animation: rightAni 1s 0.5s both;}
 #section3.ani .noticeGroup .recruitArea{animation: rightAni 1s 0.8s both;}
 #section3.ani .surveyGroup{animation: leftAni 1s 0.5s both;}
+
+/* popup */
+.popup-container {overflow: hidden;border-radius: 5px;min-width:200px;}
+.popup-container img {vertical-align: bottom;margin: 0 auto;}
+.popup-container ul {margin-top: 0;padding: 10px;background-color: #000;display: flex;}
+.popup-container ul li {cursor: pointer;width: 50%;color: #fff;text-align: center;font-weight: 500;font-size: 14px;}
+.popup-container ul li + li {border-left: 1px solid #fff;}
 
 @media screen and (max-height: 800px){
 
