@@ -82,7 +82,7 @@
 .servicesList .text .txt{margin-top: 15px;color: #222;font-size: 20px;font-weight: 400;line-height: 150%;letter-spacing: -0.2px;word-break: keep-all;}
 .servicesList .text .titMd + .txt{margin-top: 10px;}
 
-.itemList{margin-top: 100px;border-top: 2px solid #F9001C;box-sizing: border-box;}
+.itemList{border-top: 2px solid #F9001C;box-sizing: border-box;}
 .itemList > li{display: flex;flex-direction: row;flex-wrap: wrap;align-items: flex-start;justify-content: flex-start;margin: 50px 0;padding-bottom: 50px;border-bottom: 1px dashed #AAA;box-sizing: border-box;}
 .itemList > li:last-child{margin-bottom: 0;}
 .itemList > li > .title{width: 310px;color: #111;font-size: 30px;font-weight: 700;line-height: 150%;letter-spacing: -0.2px;}
@@ -98,13 +98,13 @@
 .greetingGroup > .text p.sign b{margin: 0 10px;font-size: 24px;}
 .greetingGroup > .text p.sign i.en img{vertical-align: bottom;}
 
-.managementBg{width: 100%;padding: 133px 0;background: url(../images/sub/bg_management.jpg) no-repeat center center fixed;background-size: cover;box-sizing: border-box;text-align: center;}
+.managementBg{width: 100%;padding: 133px 0;margin-bottom: 100px;background: url(../images/sub/bg_management.jpg) no-repeat center center fixed;background-size: cover;box-sizing: border-box;text-align: center;}
 .managementBg strong{display: block;color: #FFF;font-size: 34px;font-weight: 700;line-height: 150%;letter-spacing: -0.2px;word-break: keep-all;}
 .managementBg span{display: block;margin-top: 5px;color: #FFF;font-size: 20px;font-weight: 400;line-height: 150%;word-break: keep-all;}
 .managementBg p{margin-top: 30px;color: #FFF;font-size: 28px;font-weight: 600;line-height: 150%;letter-spacing: -0.2px;word-break: keep-all;}
 
 .managementBox{padding: 60px 50px;background: #FAFAFA;box-sizing: border-box;}
-.managementBox > ul > li{    display: flex;padding-bottom: 20px;margin-bottom: 20px;border-bottom: 1px solid #D9D9D9;box-sizing: border-box;color: #222;font-size: 21px;font-weight: 400;line-height: 150%;letter-spacing: -0.2px;word-break: keep-all;}
+.managementBox > ul > li{display: flex;padding-bottom: 20px;margin-bottom: 20px;border-bottom: 1px solid #D9D9D9;box-sizing: border-box;color: #222;font-size: 21px;font-weight: 400;line-height: 150%;letter-spacing: -0.2px;word-break: keep-all;}
 .managementBox > ul > li span{margin-right: 20px;font-weight: 700;}
 .managementBox > ul > li p{display: inline-block;}
 .managementBox > p{margin-top: 30px;margin-bottom: 30px;color: #222;font-size: 24px;font-weight: 500;line-height: 150%;letter-spacing: -0.2px;word-break: keep-all;}
@@ -113,7 +113,7 @@
 .counselingGroup > h5{color: #FFF;font-size: 36px;font-weight: 700;line-height: 130%;word-break: keep-all;}
 .counselingGroup > p{margin-top: 30px;color: #FFF;font-size: 20px;font-weight: 400;line-height: 150%;letter-spacing: -0.2px;word-break: keep-all;}
 .counselingGroup .call{margin-top: 45px;display: flex;flex-direction: row;flex-wrap: wrap;gap: 30px;}
-.counselingGroup .call li{display: flex;flex-direction: column;flex-wrap: nowrap;align-items: flex-start;justify-content: center;width: 420px;height: 120px;padding: 25px 40px 25px 120px;background-image: url(../images/sub/icon_call.svg);background-position: 40px center;background-repeat: no-repeat;border-radius: 20px;background-color: rgba(255, 255, 255, 0.20);backdrop-filter: blur(7.5px);box-sizing: border-box;}
+.counselingGroup .call li{display: flex;flex-direction: column;flex-wrap: nowrap;align-items: flex-start;justify-content: center;width: 480px;height: auto;padding: 25px 25px 25px 120px;background-image: url(../images/sub/icon_call.svg);background-position: 40px center;background-repeat: no-repeat;border-radius: 20px;background-color: rgba(255, 255, 255, 0.20);backdrop-filter: blur(7.5px);box-sizing: border-box;}
 .counselingGroup .call li b{color: #FFF;font-size: 20px;font-weight: 700;line-height: 150%;}
 .counselingGroup .call li p{margin-top: 5px;color: #FFF;font-size: 18px;font-weight: 500;line-height: 150%;}
 
@@ -149,6 +149,18 @@
 .addrList .addr{color: #555;font-size: 16px;font-weight: 400;line-height: 150%;letter-spacing: -0.2px;word-break: keep-all;}
 .addrList .tel{color: #555;font-size: 16px;font-weight: 400;line-height: 150%;letter-spacing: -0.2px;word-break: keep-all;}
 
+.clientList{display: flex;flex-direction: row;flex-wrap: wrap;justify-content: flex-start;align-items: flex-start;gap: 40px;}
+.clientList > li{width: calc(25% - 30px);}
+.clientList > li > p.ci{margin-bottom: 10px;border: 1px solid #ddd;box-sizing: border-box;text-align: center;}
+.clientList > li > p.ci img{vertical-align: middle;}
+.clientList > li > p.name{color: #222;font-size: 20px;font-weight: 600;line-height: 150%;text-align: center;text-transform: uppercase;}
+
+.certificateList{display: flex;flex-direction: row;flex-wrap: wrap;justify-content: flex-start;align-items: flex-start;gap: 40px 33px;}
+.certificateList > li{width: calc(25% - 25px);}
+.certificateList > li > p.img{margin-bottom: 10px;border: 1px solid #ddd;box-sizing: border-box;text-align: center;}
+.certificateList > li > p.img img{vertical-align: middle;}
+.certificateList > li > p.name{color: #222;font-size: 20px;font-weight: 600;line-height: 150%;text-align: center;text-transform: uppercase;word-break: keep-all;}
+
 @media screen and (max-width: 1399px){
 
     #subVisual{height: 400px;}
@@ -171,12 +183,11 @@
     .servicesList .text .titMd{margin-top: 20px;font-size: 20px;}
     .servicesList .text .txt{margin-top: 10px;font-size: 18px;}
 
-    .itemList{margin-top: 50px;}
     .itemList > li{margin: 30px 0;padding-bottom: 30px;}
     .itemList > li > .title{width: 260px;font-size: 24px;}
     .itemList > li > .text{width: calc(100% - 260px);}
 
-    .managementBg{padding: 100px 0;}
+    .managementBg{padding: 100px 0;margin-bottom: 50px;}
     .managementBg strong{font-size: 30px;}
     .managementBg span{font-size: 18px;}
     .managementBg p{margin-top: 15px;font-size: 22px;}
@@ -216,6 +227,14 @@
     .addrList .name{font-size: 20px;}
     .addrList .addr{font-size: 15px;}
     .addrList .tel{font-size: 15px;}
+
+    .clientList{gap: 21px;}
+    .clientList > li{width: calc(33.33% - 14px);}
+    .clientList > li > p.name{font-size: 18px;}
+
+    .certificateList{gap: 21px;}
+    .certificateList > li{width: calc(33.33% - 14px);}
+    .certificateList > li > p.name{font-size: 18px;}
 
 }
 @media screen and (max-width: 767px){
@@ -291,12 +310,11 @@
     .greetingGroup > .text p.sign b{margin: 0 10px;font-size: 20px;}
     .greetingGroup > .text p.sign i.en{width: 97px;}
 
-    .itemList{margin-top: 30px;}
     .itemList > li{margin: 20px 0;padding-bottom: 20px;}
     .itemList > li > .title{width: 100%;font-size: 20px;}
     .itemList > li > .text{width: 100%;margin-top: 20px;}
 
-    .managementBg{padding: 70px 20px;}
+    .managementBg{padding: 70px 20px;margin-bottom: 30px;}
     .managementBg strong{font-size: 18px;}
     .managementBg span{font-size: 13px;}
     .managementBg p{margin-top: 10px;font-size: 16px;}
@@ -305,7 +323,7 @@
     .managementBox > ul > li{padding-bottom: 10px;margin-bottom: 10px;font-size: 15px;}
     .managementBox > p{margin-top: 15px;margin-bottom: 15px;font-size: 16px;}
 
-    .counselingGroup{padding: 30px;background-image: url(../images/sub/bg_counseling_m.jpg);}
+    .counselingGroup{padding: 30px 20px;background-image: url(../images/sub/bg_counseling_m.jpg);}
     .counselingGroup > h5{font-size: 20px;}
     .counselingGroup > p{margin-top: 10px;font-size: 14px;}
     .counselingGroup .call{margin-top: 20px;gap: 10px;}
@@ -342,6 +360,14 @@
     .addrList .name{font-size: 16px;}
     .addrList .addr{font-size: 14px;}
     .addrList .tel{font-size: 14px;}
+
+    .clientList{gap: 20px 10px;}
+    .clientList > li{width: calc(50% - 5px);}
+    .clientList > li > p.name{font-size: 16px;}
+
+    .certificateList{gap: 20px 10px;}
+    .certificateList > li{width: calc(50% - 5px);}
+    .certificateList > li > p.name{font-size: 16px;}
 
 }
 
