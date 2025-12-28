@@ -43,4 +43,18 @@ $(function(){
         });
     });
 
+    $(".certificateList .img img").on("click", function () {
+        var imgSrc = $(this).attr("src");
+        var imgAlt = $(this).attr("alt");
+
+        $(".imgModal img").attr("src", imgSrc).attr("alt", imgAlt);
+        $(".imgModal").fadeIn(200).attr("aria-hidden", "false");
+        $("body").addClass("modalOpen");
+    });
+
+    $(".imgModal .dim, .imgModal .btnClose").on("click", function () {
+        $(".imgModal").fadeOut(200).attr("aria-hidden", "true");
+        $("body").removeClass("modalOpen");
+    });
+
 });
